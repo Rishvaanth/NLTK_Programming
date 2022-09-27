@@ -1,0 +1,64 @@
+Natural Language Processing
+Assignment -1
+Rishvaanth Thiruselvan
+
+Part – 1: Part of Speech Tagging
+
+1.	For each sequence of tags below, provide an English sentence that would have that sequence of tags if correctly tagged and would make sense based on the sentence's meaning.
+
+(a) WRB VBZ DT NN IN DT NN ?
+Where lies the blame of the loss?
+
+(b) VBG IN NNP VBZ RB RB JJ
+Thinking that Claire plays extremely casually good
+
+(c) PRP VBD VBG IN DT NN .
+You sat slacking during the test
+
+(d) MD PRP VB DT VBG NNS ?
+May I get the sleeping tents?
+
+2.	Ambiguous English Grammar:
+
+(a) It may be wrong for "Buffalo buffalo buffalo the sheep." where the intended structure is as a sentence, with the Subject "Buffalo buffalo", the main verb "buffalo", and the object "the sheep". Provide the correct sequence of tags and constituency structure for this sentence.
+
+Tags:
+
+Buffalo |  buffalo | buffalo | the |  sheep |.
+NNP     |  NNP     | VBP    | DT  | NN	    |.
+
+Constituency Structure:
+
+(S(NP(NNP ‘Buffalo’)(NNP ‘Buffalo’))(VP(VPB ‘buffalo’)(NP(DT ‘the’)(NN ‘sheep’))))
+
+(b) It may also be wrong for "The metal stands stand near the door." where the intended structure is with the subject "The metal stands", the main verb "stand", and modifying location "near the door". Provide the correct sequence of tags and structure for this sentence.
+
+
+
+
+Tags:
+
+The | metal | stand | stands | near | the | door|.
+DT  | NN    | NN     | VBZ    | IN     | DT| NN  |
+
+
+Constituency Structure:
+
+(S(NP(DT 'The')(NN 'metal')(NN 'stand'))(VP(VBZ stands)(PP (IN 'near')(NP (DT 'the')(NN 'door')))))
+
+
+3.	A word with multiple senses can get different tags depending on the context. For each word below, provide a single sentence with the specified set of tags.
+
+(a)	Watch as both VB and NN:
+He had to watch his watch closely: PRP | VBD | TO | VB | PRP$ | NN | RB
+
+(b)	Dry as both VBP and JJ:
+I dry these raisins for the dry season: PRP| VBP| DT| NNS| IN| DT| JJ | NN
+
+(c)	Light as a NN, VB, and JJ:
+     Light came through the light blinds at sunrise and I saw it light the dark room:
+    NN| VBD| IN| DT| JJ| NNS| IN| NNS| CC| PRP| VBD| PRP| VB| DT| JJ| NN
+
+(d)	Novel as a NN and a JJ:
+This novel gives a novel meaning to life: DT|NN|VBZ|DT|JJ|NN|DT|NN
+
